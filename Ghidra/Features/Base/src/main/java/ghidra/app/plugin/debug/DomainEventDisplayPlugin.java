@@ -172,12 +172,23 @@ public class DomainEventDisplayPlugin extends Plugin implements DomainObjectList
 				}
 			}
 			if (s == null) {
-				s = dateStr + getEventName(eventType) + " (" + eventType + ") => start param = " +
-					start + ", end param = " + end + "\n" + padString + "old value = " + oldValue +
-					", new value = " + newValue + ", affected object = " + affectedObj +
-					", (source=" + event.getSource() + ")\n";
-			}
-			provider.displayEvent(s);
+				s = dateStr + getEventName(eventType) + " (" + eventType + ") "
+						//+ "=> start param = " + start + ", end param = " + end + "\n" + padString 
+						+ "old value = " + oldValue + ", new value = " + newValue 
+						+ ", affected object = " + affectedObj + ", (source=" + event.getSource() + ")\n";
+				if (oldValue != null && !oldValue.equals(newValue)) {
+					provider.displayEvent(s);
+				}
+			}else {
+				provider.displayEvent(s);
+			}			
+//			if (s == null) {
+//				s = dateStr + getEventName(eventType) + " (" + eventType + ") => start param = " +
+//					start + ", end param = " + end + "\n" + padString + "old value = " + oldValue +
+//					", new value = " + newValue + ", affected object = " + affectedObj +
+//					", (source=" + event.getSource() + ")\n";
+//			}
+//			provider.displayEvent(s);
 		}
 	}
 

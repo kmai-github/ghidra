@@ -49,7 +49,7 @@ public class DomainEventComponentProvider extends ComponentProviderAdapter {
 		createAction();
 		setIcon(ICON);
 		setDefaultWindowPosition(WindowPosition.BOTTOM);
-		setTitle("Domain Object Event Display");
+		setTitle("Active Object change/Update Event Window");
 		setVisible(true);
 	}
 
