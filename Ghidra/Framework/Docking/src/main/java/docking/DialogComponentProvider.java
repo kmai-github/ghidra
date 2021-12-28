@@ -104,7 +104,7 @@ public class DialogComponentProvider
 	 * a button panel. Its title will be the same as its name.
 	 * @param title the dialog title.
 	 */
-	protected DialogComponentProvider(String title) {
+	public DialogComponentProvider(String title) {
 		this(title, true, true, true, false);
 	}
 

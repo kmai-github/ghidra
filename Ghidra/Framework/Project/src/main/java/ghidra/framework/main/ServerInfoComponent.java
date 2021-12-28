@@ -77,6 +77,25 @@ public class ServerInfoComponent extends JPanel {
 	public int getPortNumber() {
 		return portNumber;
 	}
+	
+	/*
+	 * Setters
+	 */
+	public void setServerNameField(String name) {
+		nameField.setText(name);
+	}
+	
+	public void setPortNumber(int port) {
+		portNumberField.setText(String.valueOf(port));
+	}
+	
+	public void clearServerNameField() {
+		nameField.setText("");
+	}
+	
+	public void clearPortNumber() {
+		portNumberField.setText("");
+	}
 
 	/**
 	 * Set the field values using the given server info.
