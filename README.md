@@ -1,6 +1,5 @@
 ### Notes: 
-This repo was forked from [National Security Agency Github Ghidra repo](https://github.com/NationalSecurityAgency/ghidra) specifically to add plugin for SensorRE project.
-This plugin code can be found in [github](https://github.com/kmai-github/ghidra/tree/master/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/sensorRE)
+This repo was forked from [National Security Agency Github Ghidra repo](https://github.com/NationalSecurityAgency/ghidra) specifically to add plugin for SensorRE project and this plugin code can be found in [github](https://github.com/kmai-github/ghidra/tree/master/Ghidra/Features/Base/src/main/java/ghidra/app/plugin/sensorRE).
 
 
 
